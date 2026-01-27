@@ -41,7 +41,18 @@ class DoubleLinkedList:
             print(temp.data, end="->")
             temp = temp.next
         print("None")    
-                
+        
+    def display_specific_node(self,position):
+        temp = self.head
+        count = 1
+        while temp is not None:
+            if count == position:
+                print("Node at position",position,"is : ", temp.data)
+                return
+            count += 1     
+            temp = temp.next
+        print("Node not found") 
+               
 dll = DoubleLinkedList()
 
 n = int(input("Enter number of nodes: "))
@@ -50,7 +61,5 @@ for i in range(n):
     dll.insert_at_start(value)
     
 dll.display()
-dll.Display_reverse()    
-    
-                    
-    
+dll.Display_reverse()
+dll.display_specific_node(3)    
