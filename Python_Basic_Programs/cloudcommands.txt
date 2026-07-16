@@ -1,0 +1,11 @@
+sudo docker login dockercnreg.azurecr.io -u dockercnreg -p 7ts67ibizJNDRDP5LlfXXY4GzWozuH9Shd5YDs2Df7771s5weRpvJQQJ99CGACGhslBEqg7NAAACAZCR4cEB
+
+sudo docker tag phpapp:v1 azuredockercontainer.azurecr.io/phpapp:v1
+
+sudo docker push dockercnreg.azurecr.io/phpapp:v1
+
+
+
+sudo docker push phpapp:latest dockercnreg.azurecr.io/phpapp:latest
+
+sudo docker login dockerconatinerregistry.azurecr.io -u dockerconatinerregistry -p 8TSlAz3M3OFZa6zxyhSElEYjlCAainPnx7jXC8TnaWG8jV6ieSa7JQQJ99CGACGhslBEqg7NAAACAZCRV4qQ
