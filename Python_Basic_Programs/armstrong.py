@@ -1,8 +1,13 @@
-n = 153
-cube = n
-while cube > 0:
-     digit = cube % 10
-     print(digit)        
-     cube = cube // 10
-     print(cube)
-        
+n = 173
+temp = n
+sum = 0
+while temp > 0:
+      digit = temp % 10
+      sum = sum + digit **3
+      temp = temp // 10
+
+if sum == n:
+   print("Armstrong")
+else:
+   print("Not aamstrong")
+      
